@@ -1,0 +1,16 @@
+{
+    "name": "speakenglish",
+    "version": "1.0.0",
+    "description": "Application web éducative déployée sur Scalingo",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "engines": {
+      "node": ">=16.0.0"
+    },
+    "dependencies": {
+      "express": "^4.18.2"
+    }
+  }
+  

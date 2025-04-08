@@ -1,0 +1,153 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.card {
+    border-radius: 15px;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #3F51B5;
+    border-color: #3F51B5;
+}
+
+.btn-primary:hover {
+    background-color: #303F9F;
+    border-color: #303F9F;
+}
+
+.btn-info {
+    background-color: #2196F3;
+    border-color: #2196F3;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #1976D2;
+    border-color: #1976D2;
+    color: white;
+}
+
+.btn-success {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.btn-success:hover {
+    background-color: #388E3C;
+    border-color: #388E3C;
+}
+
+.btn-secondary {
+    background-color: #757575;
+    border-color: #757575;
+}
+
+.btn-secondary:hover {
+    background-color: #616161;
+    border-color: #616161;
+}
+
+/* Styles pour la page d'apprentissage */
+.conversation-area {
+    height: 300px;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.user-message {
+    background-color: #E3F2FD;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    margin-left: auto;
+}
+
+.app-message {
+    background-color: #F5F5F5;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+.mic-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #FF4081;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mic-button:hover {
+    transform: scale(1.1);
+    background-color: #F50057;
+}
+
+.mic-button.listening {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 64, 129, 0.7);
+    }
+    
+    70% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 10px rgba(255, 64, 129, 0);
+    }
+    
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 64, 129, 0);
+    }
+}
+
+/* Styles pour la page d'évaluation */
+.progress-container {
+    margin: 30px 0;
+}
+
+.feedback-correct {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.feedback-incorrect {
+    color: #F44336;
+    font-weight: bold;
+}
+
+.correction-text {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Styles responsifs */
+@media (max-width: 768px) {
+    .card {
+        margin: 0 10px;
+    }
+    
+    .mic-button {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+}
